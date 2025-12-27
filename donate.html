@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Donate</h1>
+</header>
+
+<section class="card">
+    <h2>Support Our Mission</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="number" id="amount" placeholder="Amount ($)">
+
+    <div class="amounts">
+        <button onclick="setAmount(10)">$10</button>
+        <button onclick="setAmount(25)">$25</button>
+        <button onclick="setAmount(50)">$50</button>
+    </div>
+
+    <button class="btn" onclick="donate()">Donate Securely</button>
+    <p id="message"></p>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
